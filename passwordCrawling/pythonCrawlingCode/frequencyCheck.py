@@ -13,7 +13,7 @@ import re
 import codecs
 
 
-file = open('../../files/wordDataToEng.txt', 'r')
+file = open('../../files/frequencyList.txt', 'r')
 data = file.read()
 datas = data.split(',')
 
@@ -31,7 +31,7 @@ for data in datas:
 
     sleep(5)
 
-    file = open('../../files/wordDataToEngCount.txt', 'a')
+    file = open('../../files/frequencyListCount.txt', 'a')
 
     soup = BeautifulSoup(browser.page_source, "lxml")
     result = soup.find("div", attrs={"aria-expanded":"true"})

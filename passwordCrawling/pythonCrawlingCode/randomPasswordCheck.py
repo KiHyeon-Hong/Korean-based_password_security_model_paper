@@ -27,7 +27,7 @@ for i in range(10):
     string_pool = string.ascii_letters
     data = ""
 
-    for i in range(_LENGTH):
+    for i in range(random.randint(4, 10)):
         data += random.choice(string_pool)
 
     browser.find_element_by_xpath("/html/body/div[1]/div[2]/div/form/div[1]/input").click()

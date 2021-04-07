@@ -55,7 +55,7 @@ for data in datas:
         print(data, ": safe")
         file.write(data)
         file.write(":")
-        file.write(0)
+        file.write("0")
         file.write("\n")
 
     browser.find_element_by_xpath("/html/body/div[1]/div[2]/div/form/div[1]/input").click()
