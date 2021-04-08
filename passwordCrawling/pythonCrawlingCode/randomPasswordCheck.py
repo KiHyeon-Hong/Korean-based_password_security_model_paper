@@ -20,10 +20,7 @@ browser.maximize_window()
 
 browser.get("https://haveibeenpwned.com/Passwords")
 
-for i in range(10):
-
-    _LENGTH = 5
-
+for i in range(10000):
     string_pool = string.ascii_letters
     data = ""
 
