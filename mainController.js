@@ -14,3 +14,5 @@ console.log('asd123qwe123-asd@zxc'.replace(/[0-9]/g, "").replace(/[!@#$%^&*()]/g
 console.log('asd123qwe:123-asd\zxc'.replace(/[0-9]/g, "").replace(/[\∼\‘\!\@\#\$\%\^\&\*\(\)\-\_\=\+\[\{\]\}\\\|\;\:\”\’\,\<\.\>\/\?\~\'\"]/g, ""));
 
 // ∼‘!@#$%^&*()-_=+[{]}\|;:”’,<.>/?
+
+console.log(zxcvbn("password654321@").count);
