@@ -12,3 +12,5 @@ const koreanZxcvbnString = require('./modules/koreanZxcvbnString');
 
 // console.log(new koreanZxcvbnString.koreanZxcvbnString.koreanZxcvbnString().koreanZxcvbnString("gksrnrdj"));
 
+console.log("기존의 zxcvbn 사용 : ", zxcvbn("pas123sword@").score);
+console.log("기존의 zxcvbn 사용 : ", zxcvbn("pas123swort@").score);
