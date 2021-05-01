@@ -1,16 +1,16 @@
-const inko = require('./modules/myInko.js');
 const koreanZxcvbn = require('./modules/koreanZxcvbn');
 const zxcvbn = require('zxcvbn');
 const koreanZxcvbnString = require('./modules/koreanZxcvbnString');
+const comparePoint = new koreanZxcvbnString.koreanZxcvbnString.koreanZxcvbnString();
 
-// console.log("기존의 zxcvbn 사용 : ", zxcvbn("ghltnrnjs").score);
-// console.log("한국어 기반의 zxcvbn 사용 : ", koreanZxcvbn("ghltnrnjs").score);
-// console.log("숫자를 추가하여 기존의 zxcvbn 사용 : ", zxcvbn("ghltnrnjs654321").score);
-// console.log("숫자를 추가하여 한국어 기반의 zxcvbn 사용 : ", koreanZxcvbn("ghltnrnjs654321").score);
-// console.log("숫자를 중간에 넣어 한국어 기반의 zxcvbn 사용 : ", koreanZxcvbn("ghltnr654321njs").score);
+// Scores predicted by existing password security models
+console.log("Existing password security model : ", zxcvbn("ghltnrnjs654321").score);
 
+// Scores predicted by korean based password security models
+console.log("Korean based password security models(p) : ", koreanZxcvbn("ghltnrnjs654321").score);
 
-// console.log(new koreanZxcvbnString.koreanZxcvbnString.koreanZxcvbnString().koreanZxcvbnString("gksrnrdj"));
+// Dictionary Matched or not
+console.log("Dictionary Matched or not(t) : ", comparePoint.comparePoint("ghltrnjs"), "\n");
 
-console.log("기존의 zxcvbn 사용 : ", zxcvbn("pas123sword@").score);
-console.log("기존의 zxcvbn 사용 : ", zxcvbn("pas123swort@").score);
+// Security Assessment Score
+console.log("Security Assessment Score(2p+t) : ", ((koreanZxcvbn("ghltnrnjs654321").score * 2) + comparePoint.comparePoint("ghltrnjs")));
