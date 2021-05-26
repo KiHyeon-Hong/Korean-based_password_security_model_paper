@@ -1,4 +1,4 @@
-datas = open('./files/koreanBasedZxcvbnScore.txt', 'r', encoding='utf-8')
+datas = open('../files/koreanBasedZxcvbnScore.txt', 'r', encoding='utf-8')
 
 datas = datas.read()
 datas = datas.split('\n')
@@ -7,7 +7,7 @@ key = []
 level = []
 value = []
 
-f = open('./files/koreanBasedZxcvbnScore.csv', 'w')
+f = open('../files/koreanBasedZxcvbnScore.csv', 'w')
 f.write('key,level,value\n')
 
 

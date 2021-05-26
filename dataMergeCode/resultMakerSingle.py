@@ -1,4 +1,4 @@
-datas = open('./files/wordDataToEngCount.txt', 'r', encoding='utf-8')
+datas = open('../files/wordDataToEngCount.txt', 'r', encoding='utf-8')
 key = []
 value = []
 
@@ -25,7 +25,7 @@ print(len(safeList))
 
 
 
-datas = open('./files/femaleListToEngCount.txt', 'r', encoding='utf-8')
+datas = open('../files/femaleListToEngCount.txt', 'r', encoding='utf-8')
 key = []
 value = []
 
@@ -52,7 +52,7 @@ print(len(safeList))
 
 
 
-datas = open('./files/maleListToEngCount.txt', 'r', encoding='utf-8')
+datas = open('../files/maleListToEngCount.txt', 'r', encoding='utf-8')
 key = []
 value = []
 
@@ -79,7 +79,7 @@ print(len(safeList))
 
 
 
-datas = open('./files/randomToEngCount.txt', 'r', encoding='utf-8')
+datas = open('../files/randomToEngCount.txt', 'r', encoding='utf-8')
 key = []
 value = []
 
@@ -107,7 +107,7 @@ print(len(safeList))
 
 
 
-datas = open('./files/frequencyListCount.txt', 'r', encoding='utf-8')
+datas = open('../files/frequencyListCount.txt', 'r', encoding='utf-8')
 key = []
 value = []
 
