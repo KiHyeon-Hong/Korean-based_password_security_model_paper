@@ -18,7 +18,6 @@ for data in datas:
     key.append(data.split(':')[0].lstrip().rstrip())
     value.append(int(data.split(':')[1].lstrip().rstrip()))
 
-
 safeList = []
 notSafeList = []
 notSafeListCount = []
