@@ -40,23 +40,25 @@ print(len(safeList))
 
 print("=======================================")
 
-file = open('./files/notSafePassword.txt', 'w')
+file = open('./files/notSafePassword2.txt', 'w')
 file.close()
-file = open('./files/safePassword.txt', 'w')
+file = open('./files/safePassword2.txt', 'w')
 file.close()
 
 
 
-file = open('./files/notSafePassword.txt', 'a')
+file = open('./files/notSafePassword2.txt', 'a')
 
-for data in notSafeList:
-    file.write(data)
+for i in range(len(notSafeList)):
+    file.write(notSafeList[i])
+    file.write(':')
+    file.write(str(notSafeListCount[i]))
     file.write(',')
 
 file.close()
 
 
-file = open('./files/safePassword.txt', 'a')
+file = open('./files/safePassword2.txt', 'a')
 
 for data in safeList:
     file.write(data)
