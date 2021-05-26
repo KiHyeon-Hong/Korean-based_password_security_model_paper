@@ -4,24 +4,35 @@
 
 ### dataMergeCode
 
+- Python code that merges files for password security analysis and converts them to csv format
+
 ### files
+
+- femaleList.txt : Top 1000 Korean female names since 2008
+- maleList.txt : Top 1000 Korean Male names since 2008
+- random\* : a randomly configured alphabet string of 4 to 10 characters
+- wordData.txt : data in descending order by frequency after filtering only by nouns in Korean general vocabulary
+
+- \*ToEng.txt : Data that converts Korean words into English alphabets -> The file will be composed of Korean-based dictionaries
+- \*ToEngCount.txt : Data to determine how many times the word has been leaked by typing in https://haveibeenpwned.com/Passwords
+- \*ToEngCount.csv : Data file with converted extension to csv file for experiment
 
 ### modules
 
+- Password Security Assessment Model proposed in this paper
+
 ### passwordCrawling
+
+- Python Crawling Code for Data Collection for Password Pre-Configuration
+
+### passwordSecurityAnalysis
+
+- Comparison experiments between existing methods and those proposed in the paper
 
 ### passwordSecurityTest
 
-=========================================================
+- File create code for comparison experiments between existing methods and those proposed in this paper.
 
 ### main.js
 
-files 디렉터리
-femaleList.txt : 2008년생 이후 한국인 여성 이름 상위 1000개 데이터
-maleList.txt : 2008년생 이후 한국인 남성 이름 상위 1000개 데이터
-random\* : 4~10글자의 랜덤으로 구성한 알파벳 문자열
-wordData.txt : 한국어 일반 어휘에서 명사만으로 필터링 후 빈도수로 내림차순을 진행한 데이터
-
-*ToEng.txt : 한국어 단어를 영어 알파벳으로 변환한 데이터 -> 해당 파일이 한국어 기반의 사전으로 구성될 것임
-*ToEngCount.txt : https://haveibeenpwned.com/Passwords에 입력하여 해당 단어가 몇번 유출되었는지 확인한 데이터
-\*ToEngCount.csv : 실험을 위해 csv 파일로 확장자를 변환한 데이터 파일
+- An example of a security level that evaluates one password from the existing method and the method proposed in this paper.
