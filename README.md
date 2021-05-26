@@ -1,4 +1,20 @@
-### Korean_based_password_Security_model_paper
+# Korean_based_password_Security_model_paper
+
+## Directory Structure Description
+
+### dataMergeCode
+
+### files
+
+### modules
+
+### passwordCrawling
+
+### passwordSecurityTest
+
+=========================================================
+
+### main.js
 
 files 디렉터리
 femaleList.txt : 2008년생 이후 한국인 여성 이름 상위 1000개 데이터
