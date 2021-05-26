@@ -1,4 +1,3 @@
-// 유출되지 않은 비밀번호 읽어서 점수 하고 저장, 아직 작성 안함
 const fs = require('fs');
 const zxcvbn = require('zxcvbn');
 const koreanZxcvbn = require('./modules/koreanZxcvbn');
