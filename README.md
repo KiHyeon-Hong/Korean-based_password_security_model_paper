@@ -28,6 +28,7 @@
 ### passwordSecurityAnalysis
 
 - Comparison experiments between existing methods and those proposed in the paper
+- https://kihyeon-hong.github.io/Korean-based_password_security_model_paper/passwordSecurityAnalysis/KoreanBasedPasswordSecurity_final.html
 
 ### passwordSecurityTest
 
